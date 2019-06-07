@@ -14,9 +14,9 @@ function convertTimeToString(date){
 
 function getEventsDic(n_days){
   // get events from calendar
-  var startDate=new Date(2019,5,10);
+  var startDate=new Date();
   startDate.setHours(0);
-  var endDate=new Date(2019,5,10);
+  var endDate=new Date();
   endDate.setHours(0);
   endDate.setDate(endDate.getDate()+n_days);
   var calendar = CalendarApp.getCalendarById(calendarId);
@@ -38,7 +38,7 @@ function getEventsDic(n_days){
 function calcFreeTime(n_days, eventsDic){
   var freeTimeForDay = {};
   for (var i=0; i<n_days; i++){
-    var date = new Date(2019,5,10);
+    var date = new Date();
     date.setDate(date.getDate()+i);
     date.setHours(8);
     date.setMinutes(30);  // initialize 08:30
@@ -56,7 +56,7 @@ function calcFreeTime(n_days, eventsDic){
         date = eventEndTime;  // replace
       });
     }
-    var limit = new Date(2019,5,10);
+    var limit = new Date();
     limit.setDate(limit.getDate()+i);
     limit.setHours(18);
     limit.setMinutes(59);  // initialize 18:59
