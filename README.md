@@ -6,7 +6,7 @@ Notification of daily availability time & its duration, and total weekly availab
 Default availability  time range: 8:30~19:00
 
 # Screenshot
-![ss](https://user-images.githubusercontent.com/37448236/59130336-1e75e800-89aa-11e9-80cb-9950ab69d715.jpeg)
+<img src="https://user-images.githubusercontent.com/37448236/59130336-1e75e800-89aa-11e9-80cb-9950ab69d715.jpeg" width=50%> 
 
 
 # Properties in code
